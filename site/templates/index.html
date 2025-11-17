@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>chord-memory</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎏</text></svg>">
+  <style>
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: #deded3;
+      color: #292525;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      font-size: 0.9rem;
+      text-align: center;
+    }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem;
+      display: grid;
+    }
+
+    h1 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2 {
+      font-size: 1rem;
+      margin-top: 2rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .subtext {
+      font-size: 0.6rem;
+      margin: 0;
+      line-height: 1rem;
+    }
+
+    .credit {
+      margin-top: 2rem;
+    }
+  
+    a {
+      color: #292525;
+    }
+
+    .slash {
+      color: #f7400f;
+    }
+
+    hr {
+      width: 50%;
+      border: none;
+      border-top: 1px solid #f7400f;
+    }
+
+    .music-cover img {
+      margin: 0.4rem;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    .home {
+      text-decoration: none;
+    }
+
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .flex-item {
+      flex: 50%;
+      box-sizing: border-box;
+      padding: 2rem 2rem;
+    }
+
+    .flex-break {
+      display: none;
+    }
+
+    @media (max-width: 600px) {
+      .flex-item {
+        flex: 100%;
+        padding: 0rem 2rem;
+      }
+      .flex-break {
+        display: block;
+      }
+    }
+
+    .flex-books {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0.8rem 0rem 0rem 0rem;
+    }
+
+    .flex-book {
+      flex: 50%;
+      box-sizing: border-box;
+      display: flex;
+			justify-content: center;
+      padding: 0.6rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    
+    <a href="index.html" class="home">🎏 chord memory</div>
+    <nav>
+      <a href="blog.html">Blog</a>
+      <span class="slash">//</span>
+      <a href="books.html">Books</a>
+      <span class="slash">//</span>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="flex-container">
+      <div class="flex-item">
+        <section>
+          <h1>Welcome!</h1>
+          <p>My name is <a href="about.html">Jordan Cahill</a> and you're currently logged on to my personal website.</p>
+          <p>The sourcecode can be found on <a target="_blank" rel="noopener noreferrer" href="https://github.com/chord-memory/chord-memory-net">GitHub</a>.</p>
+        </section>
+        
+        <hr>
+
+        <section>
+          <h2>Something to Consider</h2>
+          <em>I need the time tattooed on me permanently.</em>
+        </section>
+        
+        <hr>
+        
+        <section>
+          <h2>
+            <a href="books.html">Books I'm <em>*ahem*</em> paging through</a>
+          </h2>
+          <div class="flex-books">
+            <div class="flex-book">
+              <div>
+                <img src="../static/bird-by-bird.jpg" alt="Book cover" height="180">
+                <br>
+                <p class="subtext">40% COMPLETE</p>
+              </div>
+            </div>
+            <div class="flex-book">
+              <div>
+                <img src="../static/comptia-security-study-guide.jpg" alt="Book cover" height="180">
+                <br>
+                <p class="subtext">13% COMPLETE</p>
+              </div>
+            </div>
+            <div class="flex-book">
+              <div>
+                <img src="../static/you-are-here.jpg" alt="Book cover" height="180">
+                <br>
+                <p class="subtext">9% COMPLETE</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <hr class="flex-break">
+      </div>
+      <div class="flex-item">
+        <section>
+            <!--I was recently listening to-->
+            <h2>I am currently listening to »</h2>
+            <a target="_blank" rel="noopener noreferrer" href="https://open.spotify.com/track/6NTMv6UZz9sR3E2sDsuuPd">
+              <img class="music-cover" src="../static/player-non-player.jpg" alt="Album cover" height="180">
+            </a>
+            <div>
+              <strong>Agar Agar</strong><br>
+              <em>Dragon</em><br><br>
+              <div class="subtext">
+                <strong>PREVIOUSLY</strong><br>
+                <a target="_blank" rel="noopener noreferrer" href="https://open.spotify.com/track/0cxWpZybCJ7t53Gi8TK7iD">🎧 A New Living Being Opens Its Eyes For the First Time - Dylan Henner</a><br>
+                <a target="_blank" rel="noopener noreferrer" href="https://open.spotify.com/track/7fSqQ2xxDDBbKkwLTUOnoG">🎧 I'm Ready - Linkwood</a><br>
+                <a target="_blank" rel="noopener noreferrer" href="https://open.spotify.com/track/7Mfphp1hjAJIcOdHKM1Pf1">🎧 Your Touch - Saâda Bonaire</a><br>
+                <a target="_blank" rel="noopener noreferrer" href="https://open.spotify.com/track/6ViIhvGzXnftyFOYC9fVb6">🎧 Alles dubhjørne - Alle</a><br>
+                <a target="_blank" rel="noopener noreferrer" href="https://open.spotify.com/track/52Wvl8ZDJKrmLYpnr9aT4C">🎧 My Dear Life - Mariangela Celeste</a><br>
+                <a target="_blank" rel="noopener noreferrer" href="https://open.spotify.com/track/37BtXnSdQYv2D15qxXe7md">🎧 first period - Rei Harakami</a><br>
+              </div>
+            </div>
+        </section>
+    
+        <hr>
+    
+        <section>
+            <h2>Recently updated pages</h2>
+            <a href="blog/randomness.html">True Randomness</a><br>
+            <a href="blog/japanese.html">Japanese Euphonic Changes</a><br>
+            <a href="blog/way-things-are.html">The Way Things Are</a><br>
+            <a href="blog/linguistics.html">Linguistics & Communication</a><br>
+        </section>
+
+        <hr>
+    
+        <section>
+          <p class="subtext credit">Much credit to Marcus Crane whose website <a target="_blank" rel="noopener noreferrer" href="https://utf9k.net/">utf9k.net</a> I took heaping inspiration from.</p>
+        </section>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>chord-memory</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎏</text></svg>">
+  <style>
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: #deded3;
+      color: #292525;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      font-size: 0.9rem;
+    }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem;
+      display: grid;
+    }
+
+    h1 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+		h2 {
+      font-size: 1rem;
+      margin-top: 2rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .subtext {
+      font-size: 0.6rem;
+      margin: 0;
+      line-height: 1rem;
+    }
+  
+    a {
+      color: #292525;
+    }
+
+    .slash {
+      color: #f7400f;
+    }
+
+    .home {
+      text-decoration: none;
+    }
+
+		.grid-container {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+		}
+
+		.grid-item {
+			padding: 2em;
+			display: flex;
+			justify-content: center;
+		}
+
+		@media (max-width: 640px) {
+			.grid-container {
+				grid-template-columns: repeat(2, 1fr);
+			}
+		}
+
+		@media (max-width: 440px) {
+			.grid-container {
+				grid-template-columns: 1fr;
+			}
+		}
+
+    .book-cover {
+      cursor: pointer;
+    }
+
+    .overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.5);
+    }
+
+    .modal {
+      background-color: #f2f2e6;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 780px;
+      width: 90%;
+    }
+
+    .modal-content p {
+      font-size: 0.8rem;
+    }
+
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .flex-item-img {
+      display: flex;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    .flex-item-text {
+      flex: 1;
+      padding: 2rem 2rem 2rem 0rem;
+    }
+
+    @media (max-width: 600px) {
+			.flex-container {
+				flex-direction: column;
+			}
+
+      .flex-item-text {
+        padding: 0rem 2rem 2rem 2rem;
+      }
+		}
+
+  </style>
+</head>
+<body>
+  <header>
+    
+    <a href="index.html" class="home">🎏 chord memory</div>
+    <nav>
+      <a href="blog.html">Blog</a>
+      <span class="slash">//</span>
+      <a href="books.html">Books</a>
+      <span class="slash">//</span>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Books</h1>
+
+    <h2>2025</h2>
+
+		<div class="grid-container">
+      <div class="grid-item">
+				<div>
+					<img class="book-cover" src="../static/bird-by-bird.jpg" alt="Book cover" height="180">
+					<br>
+					<strong class="subtext">40% COMPLETE</strong>
+				</div>
+			</div>
+			<div class="grid-item">
+				<div>
+					<img class="book-cover" src="../static/comptia-security-study-guide.jpg" alt="Book cover" height="180">
+					<br>
+					<strong class="subtext">13% COMPLETE</strong>
+				</div>
+			</div>
+      <div class="grid-item">
+				<div>
+					<img class="book-cover" src="../static/return-from-the-stars.jpg" alt="Book cover" height="180">
+					<br>
+					<strong class="subtext">JAN 3 » SEP 11</strong>
+				</div>
+			</div>
+		</div>
+
+    <h2>2024</h2>
+
+    <div class="grid-container">
+      <div class="grid-item">
+        <div>
+          <img class="book-cover" src="../static/code-second-edition.jpg" alt="Book cover" height="180">
+          <br>
+          <strong class="subtext">JAN 2 » DEC 18</strong>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div>
+          <img class="book-cover" src="../static/snow-crash.jpg" alt="Book cover" height="180">
+          <br>
+          <strong class="subtext">FEB 13 » OCT 18</strong>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div>
+          <img class="book-cover" src="../static/no-longer-human.jpg" alt="Book cover" height="180">
+          <br>
+          <strong class="subtext">MAY 19 » AUG 18</strong>
+        </div>
+      </div>
+    </div>
+
+    <div id="overlay" class="overlay">
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <div class="flex-container">
+              <div class="flex-item-img">
+                <img src="../static/no-longer-human.jpg" alt="Book cover" height="240">
+              </div>
+              <div class="flex-item-text">
+                <h1>No Longer Human</h1>
+                <em>Osamu Dazai</em><br>
+                <strong class="subtext">1948</strong><br>
+                
+                <p>In a semi autobiographical account of real and imagined battles, Dazai writes about his conflicting persona. He describes his outward personality as a costume suitable for a clown, while within his seriousness and inability to be entertained cause catastrohic social anxiety.</p>
+                <p>This book is not to be read during a bought of depression. It is not for the light-hearted. It is a most disturbing yet relatable record of mental illness and suffering. The narrater is a reflection of us all, bolded and italisized, with the more somber and terrifying parts highlighted. Simultanelousy, he is so very alone.</p>
+                <p>Published in Japan in the late 1940s shortly after Dazai committed suicide, No Longer Human is proof to the Japanese populus that ones apparent composure may have more to do with societal norms than genuine agreeance. I highly recommend this book for its historical significance and grotesque allure.</p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    var overlay = document.getElementById("overlay");
+    var modal = document.getElementById("modal");
+    var covers = document.getElementsByClassName("book-cover");
+
+    function openModal() {
+      overlay.style.display = "block";
+    }
+    
+    function closeModal() {
+      overlay.style.display = "none";
+    }
+
+    function modalClick(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      e.stopImmediatePropagation();
+      return false;
+    }
+
+    overlay.addEventListener('click', closeModal);
+    modal.addEventListener('click', modalClick);
+
+    for (var cover of covers) {
+      cover.addEventListener('click', openModal);
+    };
+
+  </script>
+</body>
+</html>
