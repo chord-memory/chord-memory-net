@@ -43,9 +43,9 @@
     }
 
     .subtext {
-      font-size: 0.6rem;
+      font-size: 0.7rem;
       margin: 0;
-      line-height: 1rem;
+      line-height: 1.3rem;
     }
 
     .credit {
@@ -54,6 +54,11 @@
   
     a {
       color: #292525;
+    }
+
+    .subtext a {
+      text-decoration: none;
+      border-bottom: solid 0.5px;
     }
 
     .slash {
@@ -114,7 +119,7 @@
       box-sizing: border-box;
       display: flex;
 			justify-content: center;
-      padding: 0.6rem;
+      padding: 0rem 0.6rem;
     }
   </style>
 </head>
@@ -126,6 +131,8 @@
       <a href="blog.html">Blog</a>
       <span class="slash">//</span>
       <a href="books.html">Books</a>
+      <span class="slash">//</span>
+      <a href="books.html">Movies</a>
       <span class="slash">//</span>
       <a href="about.html">About</a>
     </nav>
@@ -151,7 +158,7 @@
         
         <section>
           <h2>
-            <a href="books.html">Books I'm <em>*ahem*</em> paging through</a>
+            <a href="books.html">Book reviews</a>
           </h2>
           <div class="flex-books">
             <div class="flex-book">
@@ -168,14 +175,41 @@
                 <p class="subtext">13% COMPLETE</p>
               </div>
             </div>
+          </div>
+        </section>
+
+        <hr>
+
+        <section>
+          <h2>
+            <a href="books.html">Movie reviews</a>
+          </h2>
+          <div class="flex-books">
             <div class="flex-book">
               <div>
-                <img src="../static/you-are-here.jpg" alt="Book cover" height="180">
+                <img src="../static/the-ring.jpg" alt="Book cover" height="180">
                 <br>
-                <p class="subtext">9% COMPLETE</p>
+                <p class="subtext">NOV 16 2025</p>
+              </div>
+            </div>
+            <div class="flex-book">
+              <div>
+                <img src="../static/badlands.jpg" alt="Book cover" height="180">
+                <br>
+                <p class="subtext">OCT 11 2025</p>
               </div>
             </div>
           </div>
+        </section>
+
+        <hr>
+
+        <section>
+          <h2>Recent Blog Posts</h2>
+          <a href="blog/randomness.html">True Randomness</a><br>
+          <a href="blog/japanese.html">Japanese Euphonic Changes</a><br>
+          <a href="blog/way-things-are.html">The Way Things Are</a><br>
+          <a href="blog/linguistics.html">Linguistics & Communication</a><br>
         </section>
 
         <hr class="flex-break">
@@ -203,13 +237,25 @@
         </section>
     
         <hr>
-    
+
         <section>
-            <h2>Recently updated pages</h2>
-            <a href="blog/randomness.html">True Randomness</a><br>
-            <a href="blog/japanese.html">Japanese Euphonic Changes</a><br>
-            <a href="blog/way-things-are.html">The Way Things Are</a><br>
-            <a href="blog/linguistics.html">Linguistics & Communication</a><br>
+          <h2>Featured playlist »</h2>
+          
+          <a target="_blank" rel="noopener noreferrer" href="https://open.spotify.com/playlist/7fhrIntiFuF2gg8mqMPQPx">
+            <img class="music-cover" src="../static/close-your-eyes.png" alt="Playlist cover" height="180">
+          </a>
+          <div>
+            <em>close your eyes</em><br><br>
+            <div class="subtext">
+              <strong>SEE ALSO</strong><br>
+              <a target="_blank" rel="noopener noreferrer" href="https://open.spotify.com/playlist/6GmJsJzTLwcSKhk1PMyRFi">🎧 rare moment</a><br>
+              <a target="_blank" rel="noopener noreferrer" href="https://open.spotify.com/playlist/1s0USuiCPvYoE5clYfzdn6">🎧 Wasteland</a><br>
+              <a target="_blank" rel="noopener noreferrer" href="https://open.spotify.com/playlist/1ItCTpe77B9W97ELyOQChx">🎧 the way things are</a><br>
+              <a target="_blank" rel="noopener noreferrer" href="https://open.spotify.com/playlist/4oq9E3Db1zDUgl2J4frzKT">🎧 ambient something</a><br>
+              <a target="_blank" rel="noopener noreferrer" href="https://open.spotify.com/playlist/6ymMqJcwZT6Odhb6JdND0O">🎧 Adventures in the Land of Music</a><br>
+              <a target="_blank" rel="noopener noreferrer" href="https://open.spotify.com/playlist/2AAYVChnF8Dud9QLgsZYQ5">🎧 walking in circles</a><br>
+            </div>
+          </div>
         </section>
 
         <hr>
