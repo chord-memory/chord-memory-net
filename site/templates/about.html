@@ -24,7 +24,7 @@
     }
 
     main {
-      max-width: 480px;
+      max-width: 540px;
       margin: 0 auto;
       padding: 2rem;
       display: grid;
@@ -52,6 +52,27 @@
     .home {
       text-decoration: none;
     }
+
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .flex-item-img {
+      padding: 0rem 1rem 0rem 0rem;
+    }
+
+    .flex-item-text {
+      flex: 1;
+      max-width: 260px;
+    }
+
+    @media (max-width: 570px) {
+			.flex-container {
+				flex-direction: column;
+			}
+		}
+
   </style>
 </head>
 <body>
@@ -68,13 +89,20 @@
   </header>
 
   <main>
-    <h1>A bit about me</h1>
+    <h1>Hello there!</h1>
     <span class="subtext">LAST UPDATED ON NOV 14, 2025</span>
     <br>
-    <!--TODO: make more aestheticly pleasing-->
-    <p>My name is Jordan Cahill and you're logged on to my personal website!</p>
-    <p>I am a software engineer, rock climber, Japanese language & trees enthusiast with eclectic playlists based in Austin, TX.</p>
-    <p>Feel free to reach out w/ thoughts & ideas at <a href="mailto:jordancahill88@gmail.com">jordancahill88@gmail.com</a>.</p>
+    <div class="flex-container">
+      <div class="flex-item-img">
+        <img src="../static/climbing-selfie.jpeg" alt="Climbing" height="320">
+      </div>
+      <div class="flex-item-text">
+        <p>My name is Jordan Cahill and you're browsing my personal website.</p>
+        <p>I'm a software engineer, rock climber, Japanese language & trees enthusiast with eclectic playlists based in Austin, TX.</p>
+        <p>I make <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/drive/folders/1AaULY7mKdpZJGnukPAAxzKC-fGRHHAko?usp=sharing">art</a> from time to time but lately been spending most of my time traveling & in nature.</p>
+        <p>Feel free to reach out with thoughts & ideas at <a href="mailto:jordancahill88@gmail.com">jordancahill88@gmail.com</a>.</p>
+      </div>
+    </div>
   </main>
 </body>
 </html>
