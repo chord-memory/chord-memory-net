@@ -1,0 +1,19 @@
+main {
+  max-width: 540px;
+}
+
+.subtext {
+  padding-left: 0.6rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  line-height: 2rem;
+}
+
+li:before {
+  content: "»";
+  padding-right: 1rem;
+  color: #f7400f;
+}

@@ -1,0 +1,51 @@
+.media-cover {
+  cursor: pointer;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+}
+
+.modal {
+  background-color: #f2f2e6;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 780px;
+  width: 90%;
+}
+
+.modal-content p {
+  font-size: 0.8rem;
+}
+
+.flex-modal {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-modal-img {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+}
+
+.flex-modal-text {
+  flex: 1;
+  padding: 2rem 2rem 2rem 0rem;
+  text-align: left;
+}
+
+@media (max-width: 600px) {
+  .flex-modal {
+    flex-direction: column;
+  }
+
+  .flex-modal-text {
+    padding: 0rem 2rem 2rem 2rem;
+  }
+}

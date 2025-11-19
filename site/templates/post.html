@@ -1,80 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>chord-memory</title>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎏</text></svg>">
-  <style>
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 2rem;
-    }
+{% extends "base.html" %}
 
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background-color: #deded3;
-      color: #292525;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      font-size: 0.9rem;
-    }
+{% block styles %}
+  <link rel="stylesheet" href="/static/styles/post.css">
+{% endblock %}
 
-    main {
-      max-width: 540px;
-      margin: 0 auto;
-      padding: 2rem;
-      display: grid;
-    }
-
-    h1 {
-      font-size: 1.2rem;
-      margin-bottom: 0.5rem;
-    }
-
-		h2 {
-      font-size: 1rem;
-      margin-top: 2rem;
-      margin-bottom: 0.25rem;
-    }
-
-    .subtext {
-      font-size: 0.7rem;
-      margin: 0;
-      line-height: 1rem;
-    }
-  
-    a {
-      color: #292525;
-    }
-
-    .slash {
-      color: #f7400f;
-    }
-
-    .home {
-      text-decoration: none;
-    }
-
-  </style>
-</head>
-<body>
-  <header>
-    
-    <a href="index.html" class="home">🎏 chord memory</div>
-    <nav>
-      <a href="../blog.html">Blog</a>
-      <span class="slash">//</span>
-      <a href="../books.html">Books</a>
-      <span class="slash">//</span>
-      <a href="../about.html">About</a>
-    </nav>
-  </header>
-
-  <main>
+{% block content %}
     <h1>Japanese Euphonic Changes</h1>
     <p>Rendaku (連濁) and sokuonbin (促音便) are the two most famous 音便 (おんびん, euphonic sound change) patterns in Japanese. Furthermore they’re part of a larger family of historical and modern sound changes that make speech flow more naturally. Let’s go over the main types:</p>
     <h2>1. 連濁 (Rendaku) — Sequential Voicing</h2>
@@ -143,6 +73,4 @@
       &nbsp;&nbsp;- Strike → ストライク<br>
       &nbsp;&nbsp;- Club → クラブ<br>
     </p>
-  </main>
-</body>
-</html>
+{% endblock %}

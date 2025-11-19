@@ -1,0 +1,60 @@
+body {
+  text-align: center;
+}
+
+hr {
+  width: 50%;
+  border: none;
+  border-top: 1px solid #f7400f;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+.music-cover img {
+  margin: 0.4rem;
+}
+
+.credit {
+  margin-top: 2rem;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-item {
+  flex: 50%;
+  box-sizing: border-box;
+  padding: 2rem 2rem;
+}
+
+.flex-break {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .flex-item {
+    flex: 100%;
+    padding: 0rem 2rem;
+  }
+  .flex-break {
+    display: block;
+  }
+}
+
+.flex-media {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.8rem 0rem 0rem 0rem;
+}
+
+.flex-media-item {
+  flex: 50%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  padding: 0rem 0.6rem;
+}

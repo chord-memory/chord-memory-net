@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>chord-memory</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎏</text></svg>">
+  <link rel="stylesheet" type="text/css" href="/static/styles/base.css">
+  {% block styles %}{% endblock %}
+</head>
+<body>
+  <header>
+    <a href="/" class="home">🎏 chord memory</a>
+    <nav>
+      <a href="/blog/">Blog</a>
+      <span class="slash">//</span>
+      <a href="/books/">Books</a>
+      <span class="slash">//</span>
+      <a href="/movies/">Movies</a>
+      <span class="slash">//</span>
+      <a href="/about/">About</a>
+    </nav>
+  </header>
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+  {% block scripts %}{% endblock %}
+</body>
+</html>

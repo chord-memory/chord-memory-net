@@ -1,106 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>chord-memory</title>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎏</text></svg>">
-  <style>
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 2rem;
-    }
+{% extends "base.html" %}
 
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background-color: #deded3;
-      color: #292525;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      font-size: 0.9rem;
-    }
+{% block styles %}
+  <link rel="stylesheet" href="/static/styles/blog.css">
+{% endblock %}
 
-    main {
-      max-width: 540px;
-      margin: 0 auto;
-      padding: 2rem;
-      display: grid;
-    }
-
-    h1 {
-      font-size: 1.2rem;
-      margin-bottom: 0.5rem;
-    }
-
-    h2 {
-      font-size: 1rem;
-      margin-top: 2rem;
-      margin-bottom: 0.25rem;
-    }
-
-    .subtext {
-      font-size: 0.7rem;
-      margin: 0;
-      line-height: 1rem;
-      padding-left: 0.6rem;
-    }
-  
-    a {
-      color: #292525;
-    }
-
-    .slash {
-      color: #f7400f;
-    }
-
-    section {
-      margin-bottom: 2rem;
-    }
-
-    .home {
-      text-decoration: none;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-      line-height: 2rem;
-    }
-
-    li:before {
-      content: "»";
-      padding-right: 1rem;
-      color: #f7400f;
-    }
-
-  </style>
-</head>
-<body>
-  <header>
-    
-    <a href="index.html" class="home">🎏 chord memory</div>
-    <nav>
-      <a href="blog.html">Blog</a>
-      <span class="slash">//</span>
-      <a href="books.html">Books</a>
-      <span class="slash">//</span>
-      <a href="about.html">About</a>
-    </nav>
-  </header>
-
-  <main>
+{% block content %}
     <h1>Posts I've written</h1>
 
     <h2>2025</h2>
     <ul>
-      <li><a href="">True Randomness</a><span class="subtext">NOV 1</span></li>
-      <li><a href="">Japanese Euphonic Changes</a><span class="subtext">OCT 18</span></li>
-      <li><a href="">The Way Things Are</a><span class="subtext">SEP 13</span></li>
-      <li><a href="">Linguistics & Communication</a><span class="subtext">JUL 4</span></li>
+      <li><a href="/blog/japanese/">True Randomness</a><span class="subtext">NOV 1</span></li>
+      <li><a href="/blog/japanese/">Japanese Euphonic Changes</a><span class="subtext">OCT 18</span></li>
+      <li><a href="/blog/japanese/">The Way Things Are</a><span class="subtext">SEP 13</span></li>
+      <li><a href="/blog/japanese/">Linguistics & Communication</a><span class="subtext">JUL 4</span></li>
     </ul>
-  </main>
-</body>
-</html>
+{% endblock %}

@@ -1,0 +1,23 @@
+main {
+  max-width: 540px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-item-img {
+  padding: 0rem 1rem 0rem 0rem;
+}
+
+.flex-item-text {
+  flex: 1;
+  max-width: 260px;
+}
+
+@media (max-width: 570px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}

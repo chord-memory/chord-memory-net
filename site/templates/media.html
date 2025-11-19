@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% block styles %}
+  <link rel="stylesheet" href="/static/styles/media.css">
+  <link rel="stylesheet" href="/static/styles/modal.css">
+{% endblock %}
+
+{% block content %}
+    <h1>Books</h1>
+
+    <h2>2025</h2>
+
+    <div class="grid-container">
+      <div class="grid-item">
+        <div>
+          <img class="media-cover" src="/static/images/bird-by-bird.jpg" alt="Book cover" height="180">
+          <br>
+          <p class="subtext">40% COMPLETE</p>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div>
+          <img class="media-cover" src="/static/images/comptia-security-study-guide.jpg" alt="Book cover" height="180">
+          <br>
+          <p class="subtext">13% COMPLETE</p>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div>
+          <img class="media-cover" src="/static/images/return-from-the-stars.jpg" alt="Book cover" height="180">
+          <br>
+          <p class="subtext">JAN 3 » SEP 11</p>
+        </div>
+      </div>
+    </div>
+
+    <h2>2024</h2>
+
+    <div class="grid-container">
+      <div class="grid-item">
+        <div>
+          <img class="media-cover" src="/static/images/code-second-edition.jpg" alt="Book cover" height="180">
+          <br>
+          <p class="subtext">JAN 2 » DEC 18</p>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div>
+          <img class="media-cover" src="/static/images/snow-crash.jpg" alt="Book cover" height="180">
+          <br>
+          <p class="subtext">FEB 13 » OCT 18</p>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div>
+          <img class="media-cover" src="/static/images/no-longer-human.jpg" alt="Book cover" height="180">
+          <br>
+          <p class="subtext">MAY 19 » AUG 18</p>
+        </div>
+      </div>
+    </div>
+
+{% include "modal.html" %}
+{% endblock %}
+
+{% block scripts %}
+  <script src="/static/scripts/modal.js"></script>
+{% endblock %}
