@@ -1,11 +1,12 @@
 {% extends "base.html" %}
 
 {% block styles %}
-  <link rel="stylesheet" href="/static/styles/post.css">
+  <link rel="stylesheet" href="/static/styles/post.css?v={{ build_ts }}">
 {% endblock %}
 
 {% block content %}
     <h1>Japanese Euphonic Changes</h1>
+    <p class="subtext">MAR 13, 2025</p><br>
     <p>Rendaku (連濁) and sokuonbin (促音便) are the two most famous 音便 (おんびん, euphonic sound change) patterns in Japanese. Furthermore they’re part of a larger family of historical and modern sound changes that make speech flow more naturally. Let’s go over the main types:</p>
     <h2>1. 連濁 (Rendaku) — Sequential Voicing</h2>
     <p>

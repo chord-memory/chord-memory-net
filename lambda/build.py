@@ -1,11 +1,15 @@
 import os
 import shutil
+import time
 
 from jinja2 import Environment, FileSystemLoader
 
 INPUT_DIR = 'site'
 OUTPUT_DIR = 'build'
 BLOG_DIR = os.path.join(OUTPUT_DIR, 'blog')
+
+# Generate build_ts to prevent css & js caching
+BUILD_TS = int(time.time())
 
 # Set up Jinja2 environment
 template_dir = os.path.join(INPUT_DIR, 'templates')
@@ -54,7 +58,7 @@ shutil.rmtree(OUTPUT_DIR)
 # Render and save each page
 for page in pages_data:
     template = env.get_template(page['template_name'])
-    rendered_html = template.render(**page['context'])
+    rendered_html = template.render(**page['context'], build_ts=BUILD_TS)
 
     page_dir = os.path.join(OUTPUT_DIR, page['output_dir'])
     os.makedirs(page_dir)
@@ -66,7 +70,7 @@ for page in pages_data:
 # Render and save each blog post
 for blog in blogs_data:
     template = env.get_template(blog['template_name'])
-    rendered_html = template.render(**blog['context'])
+    rendered_html = template.render(**blog['context'], build_ts=BUILD_TS)
 
     page_dir = os.path.join(BLOG_DIR, blog['output_dir'])
     os.makedirs(page_dir)
