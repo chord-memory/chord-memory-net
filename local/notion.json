@@ -1,0 +1,133 @@
+{
+  "books": [
+    {
+      "title": "Bird by Bird: Some Instructions on Writing and Life",
+      "author": "Anne Lamott",
+      "year": 1994
+    },
+    {
+      "title": "CompTIA Security+ Get Certified Get Ahead: SY0-701 Study Guide",
+      "author": "Joe Shelley & Darril Gibson",
+      "year": 2023
+    },
+    {
+      "title": "Return from the Stars",
+      "author": "Stanislaw Lem",
+      "year": 1961,
+      "read_date": {
+        "start": "2025-02-01",
+        "end": "2025-06-01"
+      }
+    },
+    {
+      "title": "Code: The Hidden Language of Computer Hardware and Software, Second Edition",
+      "author": "Charles Petzold",
+      "year": 2022,
+      "read_date": {
+        "start": "2023-10-01",
+        "end": "2024-10-01"
+      }
+    },
+    {
+      "title": "Snow Crash",
+      "author": "Neal Stephenson",
+      "year": 1992,
+      "read_date": {
+        "start": "2024-02-01",
+        "end": "2024-08-01"
+      }
+    },
+    {
+      "title": "No Longer Human",
+      "author": "Osamu Dazai",
+      "year": 1948,
+      "read_date": {
+        "start": "2024-03-01",
+        "end": "2024-05-01"
+      }
+    },
+    {
+      "title": "Edith",
+      "author": "Meg Freitag",
+      "year": 2017,
+      "read_date": {
+        "start": "2025-08-01",
+        "end": "2025-09-01"
+      }
+    }
+  ],
+  "movies": [
+    {
+      "title": "The Ring",
+      "watch_date": "2025-11-16",
+      "year": 2002,
+      "director": "Gore Verbinski"
+    },
+    {
+      "title": "Badlands",
+      "watch_date": "2025-10-11",
+      "year": 1973,
+      "director": "Terrence Malick"
+    },
+    {
+      "title": "Tremors",
+      "watch_date": "2025-11-10",
+      "year": 1990,
+      "director": "Ron Underwood"
+    }
+  ],
+  "blogs": [
+    {
+      "title": "True Randomness",
+      "slug": "randomness",
+      "published": "2025-11-01"
+    },
+    {
+      "title": "Japanese Euphonic Changes",
+      "slug": "japanese-euphonics",
+      "published": "2025-10-18"
+    },
+    {
+      "title": "The Way Things Are",
+      "slug": "way-things-are",
+      "published": "2025-09-13"
+    },
+    {
+      "title": "Linguistics & Communication",
+      "slug": "linguistics-communication",
+      "published": "2025-07-04"
+    }
+  ],
+  "quote": "I need the time tattooed on me permanently.",
+  "playlists": [
+    {
+      "name": "close your eyes",
+      "id": "7fhrIntiFuF2gg8mqMPQPx"
+    },
+    {
+      "name": "rare moment",
+      "id": "6GmJsJzTLwcSKhk1PMyRFi"
+    },
+    {
+      "name": "Wasteland",
+      "id": "1s0USuiCPvYoE5clYfzdn6"
+    },
+    {
+      "name": "the way things are",
+      "id": "1ItCTpe77B9W97ELyOQChx"
+    },
+    {
+      "name": "ambient something",
+      "id": "4oq9E3Db1zDUgl2J4frzKT"
+    },
+    {
+      "name": "Adventures in the Land of Music",
+      "id": "6ymMqJcwZT6Odhb6JdND0O"
+    },
+    {
+      "name": "walking in circles",
+      "id": "2AAYVChnF8Dud9QLgsZYQ5"
+    }
+  ],
+  "featured_playlist": 0
+}
