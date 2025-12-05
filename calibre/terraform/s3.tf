@@ -8,6 +8,14 @@ resource "aws_s3_bucket" "setup" {
   tags   = { Name = var.setup_bucket_name }
 }
 
+data "template_file" "caddy" {
+  template = file("${var.service_path}/Caddyfile.tpl")
+  vars = {
+    admin_email = var.admin_email
+    domain_name = var.domain_name
+  }
+}
+
 resource "aws_s3_object" "files" {
   for_each = fileset(var.setup_path, "**/*")
 
