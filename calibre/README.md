@@ -4,7 +4,7 @@ chord-memory.net utilizes [Calibre-Web](https://github.com/janeczku/calibre-web)
 
 ## Test Run Locally
 
-To test run the official [calibre-web](https://hub.docker.com/r/linuxserver/calibre-web) image on Mac, cd into the `calibre` directory and run:
+To test run the official [calibre-web](https://hub.docker.com/r/linuxserver/calibre-web) image on Mac, cd into the `calibre/local` directory and run:
 ```
 docker-compose up -d
 ```
@@ -21,6 +21,15 @@ On first launch:
 
 // TODO
 // Ensure to edit admin/admin123 PW upon deployment
+// TODO
+// How to get AWS creds for deploying locally? New IAM user?
+// Manually generated?
+// Wbout for deploying within GitHub? New IAM user?
+// Manually generated?
+```
+terraform init
+terraform apply
+```
 
 ## Kobo Sync Setup
 
@@ -57,3 +66,19 @@ Note that any sideloaded books synced from Calibre desktop will be duplicated. S
 * Can still use Calibre desktop to store Annotations
 * Cannot use KoboUtilities edit book metadata & cover bc Calibre-Web loaded book will not be recognized by Calibre desktop on Kobo
 * When [this PR](https://github.com/janeczku/calibre-web/pull/3381) is merged then book metadata & cover can be edited in Calibre desktop followed by aws s3/ebs sync and "Sync Now" on Kobo
+
+
+
+## Manually Sync Calibre Desktop & Calibre-Web
+
+When edits are made to Calibre Desktop such as new ePubs added or Annotations synced to it, these changes may be synced to Calibre-Web by running the following commands:
+```
+# Configure profile
+aws configure --profile calibre-sync
+# On Mac
+aws s3 sync ./my-local-library s3://my-bucket
+# SSH into EC2
+aws ssm start-session --target i-xxxxxxxx
+# On EC2
+aws s3 sync s3://my-bucket /mnt/ebs-library
+```

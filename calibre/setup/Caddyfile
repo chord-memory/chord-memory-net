@@ -1,0 +1,4 @@
+cweb.chord-memory.net {
+  reverse_proxy /api/* flask:5000
+  reverse_proxy / calibreweb:8083
+}

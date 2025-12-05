@@ -1,4 +1,5 @@
 .DS_Store
 .venv
 build
-calibre/config
+calibre/local/config
+calibre/terraform/terraform.tfvars
