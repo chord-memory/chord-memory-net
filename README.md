@@ -18,4 +18,4 @@ and then view the site in the browser at http://localhost:8000.
 
 chord-memory.net utilizes [Calibre-Web](https://github.com/janeczku/calibre-web) to access progress % for eBooks on Kobo.
 
-See [calibre/README.md](calibre/README.md) for more details on Kobo eBooks & Calibre workflow.
+See [calibre-web-aws](https://github.com/chord-memory/calibre-web-aws) for more details.

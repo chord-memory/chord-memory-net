@@ -1,0 +1,22 @@
+[2025-12-10 17:22:04,065]  WARN {config_sql.py:364} Log path /config/calibre-web.log not valid, falling back to default
+[2025-12-10 17:22:04,079]  WARN {config_sql.py:364} Log path  not valid, falling back to default
+[2025-12-10 17:22:05,169]  WARN {config_sql.py:364} Log path  not valid, falling back to default
+[2025-12-10 17:22:05,217]  INFO {__init__.py:177} Starting Calibre Web...
+[2025-12-10 17:22:06,305]  WARN {config_sql.py:400} invalidating configuration
+[2025-12-10 17:22:06,305]  WARN {config_sql.py:364} Log path  not valid, falling back to default
+[2025-12-10 17:22:06,313]  WARN {warnings.py:110} /lsiopy/lib/python3.12/site-packages/flask_limiter/extension.py:324: UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
+  warnings.warn(
+
+[2025-12-10 17:22:06,598]  INFO {base.py:214} Scheduler started
+[2025-12-10 17:22:06,599]  INFO {base.py:1090} Added job "delete temp" to job store "default"
+[2025-12-10 17:22:06,599]  INFO {base.py:1090} Added job "end scheduled task" to job store "default"
+[2025-12-10 17:22:06,600]  INFO {base.py:1090} Added job "immediately delete temp" to job store "default"
+[2025-12-10 17:22:06,601]  INFO {base.py:129} Running job "immediately delete temp (trigger: date[2025-12-10 17:22:06 CST], next run at: 2025-12-10 17:22:06 CST)" (scheduled at 2025-12-10 17:22:06.600368-06:00)
+[2025-12-10 17:22:06,601]  INFO {base.py:728} Removed job b9f130f8d0664a4a9734e706009c37c5
+[2025-12-10 17:22:06,626]  INFO {base.py:156} Job "immediately delete temp (trigger: date[2025-12-10 17:22:06 CST], next run at: 2025-12-10 17:22:06 CST)" executed successfully
+[2025-12-10 17:22:06,780]  INFO {ub.py:764} github Blueprint Created
+[2025-12-10 17:22:06,785]  INFO {ub.py:764} google Blueprint Created
+[2025-12-10 17:22:08,345]  INFO {server.py:218} Starting Gevent server on [::]:8083
+[2025-12-10 17:23:08,472]  INFO {server.py:319} webserver stop (restart=False)
+[2025-12-10 17:23:08,473]  INFO {base.py:245} Scheduler has been shut down
+[2025-12-10 17:23:08,474]  INFO {server.py:298} Performing shutdown of Calibre-Web
